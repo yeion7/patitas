@@ -1,0 +1,81 @@
+.twitter
+    display flex
+    
+    &-container
+        width 100vw
+        height 70vh
+        display flex
+        flex-direction column
+
+        @media screen and (max-width: 1024px) 
+            height 100vh
+            
+    &-view
+        flex 1 1 80%
+        display flex
+        justify-content: center
+        align-items: center
+    
+    &-tweets
+        padding-left 0
+        display flex 
+        width 90%
+                        
+    &-tweet
+        display flex
+        flex-direction column
+        justify-content center
+        align-items center
+        
+    &-icon
+        width 32px
+        height 27px
+        background url(../images/twitter-bird.png) no-repeat center
+    &-data
+        display flex
+        align-items baseline
+    
+    &-user
+        letter-spacing 2px
+        font-size 1.2em
+        font-weight 600
+        color $font3
+    &-time
+        letter-spacing 2px
+        font-size 1em
+        font-weight 300
+        color $font2
+        padding-left 5px
+    
+    &-post
+        text-align center
+        font-size 1.5em
+        font-style italic
+
+
+    &-bullets
+        flex 1 1 20%
+        height 30px
+        display flex
+        justify-content center
+        align-items: flex-start
+        
+        &-items
+            padding-left 0
+            width 20vw
+            display flex
+            justify-content space-between
+            list-style none
+        &-item a
+            display block
+            width 11px
+            height 11px
+            border-radius 50%
+            cursor pointer
+            background #f7f7f7
+            box-shadow inset 0 1px 3px #a9afb3
+            
+            &:hover
+                background #a9afb3
+    
+

@@ -1,0 +1,46 @@
+
+.contacto
+  height 80vh
+  color white
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+  @media screen and (max-width: 1025px) and (orientation: landscape)
+    height 100vh
+
+  
+  &-text
+    padding 1em
+    color $font2
+    letter-spacing: 1px
+    font-size: 1.8em
+    font-weight: 300
+    font-style: italic
+  
+  &-formulario
+    width 40%
+    display flex
+    justify-content: center
+    align-items: center
+  
+    &-input
+      flex 1 1 70%
+      font-family: sant-serif
+      line-height normal
+      padding 2em
+      border 1px solid #d3d7d9
+      font-style: italic
+      letter-spacing: 1px
+      color black
+    
+    &-button 
+      flex 1 1 30%
+      margin-left 5px
+      font-family: sant-serif
+      line-height normal
+      padding 2em
+      background $link-menu_hover
+      border 1px solid 
+      font-style: italic
+      letter-spacing: 1px
