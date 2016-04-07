@@ -462,79 +462,68 @@ a {
 .twitter-bullets-item a:hover {
   background: #a9afb3;
 }
-.product {
+.animals {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  width: 100%;
+}
+@media screen and (min-width: 769px) {
+  .animals {
+    flex-direction: row;
+    height: 400px;
+  }
+}
+.animals-left,
+.animals-right {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 769px) {
+  .animals-left,
+  .animals-right {
+    width: 30%;
+  }
+}
+.animals-middle {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 769px) {
+  .animals-middle {
+    width: 40%;
+  }
+}
+.animals-middle-top,
+.animals-middle-bottom {
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+.animals-middle-img {
+  width: 50%;
+  height: 100%;
+}
+.animals-left-top {
+  height: 50%;
+}
+.animals-left-top-img {
   width: 100%;
   height: 100%;
 }
-@media screen and (max-width: 1001px) {
-  .product {
-    flex-direction: column;
-    height: 100%;
-  }
+.animals-left-bottom {
+  display: flex;
+  height: 50%;
 }
-.product-left {
-  flex: 1 1 30%;
+.animals-left-bottom-img {
+  width: 50%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
 }
-.product-left-top {
-  flex: 1 1 50%;
-  display: flex;
-  justify-content: space-between;
-}
-.product-left-top-img1 {
-  flex: 1 1 50%;
-  background-size: auto auto;
-}
-.product-left-top-img2 {
-  flex: 1 1 50%;
-  background-size: auto auto;
-}
-.product-left-bottom {
-  flex: 1 1 50%;
-  display: flex;
-}
-.product-left-bottom-img3 {
-  flex: 1 1 50%;
-}
-.product-middle {
-  flex: 1 1 40%;
-  height: 100%;
-  display: flex;
-  align-items: stretch;
-}
-.product-middle-left {
-  flex: 1 1 50%;
-}
-.product-middle-right {
-  flex: 1 1 50%;
-}
-.product-right {
-  flex: 1 1 30%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.product-right-top {
-  flex: 1 1 50%;
-  display: flex;
-}
-.product-right-top-img5 {
-  flex: 1 1 100%;
-}
-.product-right-bottom {
-  flex: 1 1 50%;
-  display: flex;
-}
-.product-right-bottom-img2 {
-  flex: 1 1 50%;
-}
-.product-right-bottom-img3 {
-  flex: 1 1 50%;
+.colum-reverse {
+  flex-direction: column-reverse;
 }
 .discover {
   width: 100%;
