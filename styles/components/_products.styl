@@ -1,0 +1,46 @@
+.products
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 15px
+  @media screen and (min-width: 769px) {
+    justify-content: flex-start;
+  }
+
+
+.item
+  display: flex;
+  width: 400px
+  height: 230px
+  background: white
+  margin: 20px
+
+  &-pic
+    width: 50%
+    height: 100%
+
+  &-info
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px
+
+  &-title
+    align-self: center
+    font-size: 1.5em
+    color $font4
+
+  &-text
+    color $font
+
+  &-comprar
+    background: none
+    border: 1px solid $font4
+    align-self: center;
+    padding: .5em
+    border-radius: 5px
+    font-weight: bold;
+    color: $font4
+    &:hover
+      background: $font4
+      color white

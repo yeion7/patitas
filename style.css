@@ -216,7 +216,12 @@ a {
   background: #f4f5fc;
 }
 .header-pic {
-  height: 60vh;
+  height: 300px;
+}
+@media screen and (min-width: 769px) {
+  .header-pic {
+    height: 500px;
+  }
 }
 .nav {
   display: flex;
@@ -349,8 +354,8 @@ a {
   overflow: hidden;
 }
 .container-left img {
-  width: auto;
-  flex: auto;
+  width: 100%;
+  height: 100%;
 }
 .container-right {
   flex: 1 1 40%;
@@ -646,4 +651,101 @@ a {
 }
 .informacion-creador-nombre:hover {
   color: #64c29e;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 15px;
+}
+@media screen and (min-width: 769px) {
+  .products {
+    justify-content: flex-start;
+  }
+}
+.item {
+  display: flex;
+  width: 400px;
+  height: 230px;
+  background: #fff;
+  margin: 20px;
+}
+.item-pic {
+  width: 50%;
+  height: 100%;
+}
+.item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 15px;
+}
+.item-title {
+  align-self: center;
+  font-size: 1.5em;
+  color: #5ec29d;
+}
+.item-text {
+  color: #333;
+}
+.item-comprar {
+  background: none;
+  border: 1px solid #5ec29d;
+  align-self: center;
+  padding: 0.5em;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #5ec29d;
+}
+.item-comprar:hover {
+  background: #5ec29d;
+  color: #fff;
+}
+.galery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.pet {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  margin: 15px;
+}
+.pet-cover {
+  position: relative;
+}
+.pet-name {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  z-index: 10;
+  bottom: 0px;
+  font-size: 3em;
+  font-weight: bold;
+  color: #5ec29d;
+  text-align: center;
+  background: linear-gradient(to top, #000, rgba(0,0,0,0));
+}
+.pet-img {
+  width: 100%;
+  height: 100%;
+}
+.pet-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+.pet-owner {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 5px;
+}
+.pet-tel {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #848789;
 }

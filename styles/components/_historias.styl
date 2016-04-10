@@ -3,7 +3,7 @@
     display flex
     flex-direction column
     overflow hidden
-    
+
 .container
     display flex
     flex-direction column
@@ -15,14 +15,14 @@
 
     &-left
         flex 1 1 60%
-        display flex       
+        display flex
         justify-content flex-start
         overflow hidden
 
         & img
-            width auto
-            flex auto
-                
+            width 100%
+            height: 100%
+
 
     &-right
         flex 1 1 40%
@@ -30,7 +30,7 @@
         flex-direction column
         justify-content: flex-start
         align-items: flex-start
-       
+
         &-text
             flex 1 1 70%
             display flex
@@ -40,13 +40,11 @@
             background white
             @media screen and (max-width: 1024px)
                 padding 100px 0
-            
- 
-            
- 
+
+
+
+
 .reverse
     @media screen and (min-width: 1024px)
         height 90vh
         flex-direction row-reverse
-
-
