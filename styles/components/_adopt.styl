@@ -1,0 +1,61 @@
+.adopt
+  cursor: pointer;
+  &:hover
+    filter: contrast(75%) brightness(40%)
+
+
+.modal
+  position: absolute;
+  position: fixed;
+  z-index: 100000
+  width: 100%
+  height: 100%
+  background: rgba(0, 0, 0, 0.8);
+
+  &-close
+    position: absolute;
+    right: 0px
+    top 0px
+    color white
+    font-size: 1.5em
+    font-weight: bold;
+    padding: 15px
+    cursor: pointer
+
+  &-container
+    position: absolute;
+    width: 350px
+    height: 500px
+    background: white
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%);
+    padding: 5px
+    display: flex;
+    flex-direction: column;
+    align-items: center
+
+  &-img
+    width: 100%
+    height: 60%
+
+  &-name
+    color $font4
+    font-size: 1.5em
+    text-transform: uppercase;
+    margin: 5px
+  &-text
+    color $font
+    padding: 0 10px
+
+  &-button
+    background: $font4
+    border: 1px solid $font4
+    padding: .5em
+    border-radius: 5px
+    color white
+    font-weight: bold;
+    font-size: 1.2em
+    &:hover
+      background: none
+      color $font4
